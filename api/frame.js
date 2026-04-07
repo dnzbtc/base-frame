@@ -1,5 +1,19 @@
 export default function handler(req, res) {
-  res.status(200).send(`
+
+  if (req.method === "POST") {
+    res.setHeader("Content-Type", "text/html");
+    return res.send(`
+      <html>
+        <head>
+          <meta property="fc:frame" content="vNext" />
+          <meta property="fc:frame:image" content="https://picsum.photos/600/400?text=Success" />
+        </head>
+      </html>
+    `);
+  }
+
+  res.setHeader("Content-Type", "text/html");
+  return res.send(`
     <html>
       <head>
         <meta property="fc:frame" content="vNext" />
