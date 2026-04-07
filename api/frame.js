@@ -1,8 +1,5 @@
-module.exports = (req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/html");
-
-  res.end(`
+export default function handler(req, res) {
+  res.status(200).send(`
     <html>
       <head>
         <meta property="fc:frame" content="vNext" />
@@ -12,4 +9,4 @@ module.exports = (req, res) => {
       </head>
     </html>
   `);
-};
+}
