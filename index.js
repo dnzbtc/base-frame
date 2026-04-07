@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="https://picsum.photos/600/400" />
         <meta property="fc:frame:button:1" content="Check In" />
-        <meta property="fc:frame:post_url" content="https://taylor-progestational-heartenedly.ngrok-free.dev/action" />
+        <meta property="fc:frame:post_url" content="<meta property="fc:frame:post_url" content="https://base-frame-neon.vercel.app/action" />
       </head>
       <body></body>
     </html>
@@ -65,6 +65,6 @@ app.listen(3000, () => console.log("Server running"));
 app.post("/action", async (req, res) => {
   res.json({
     type: "frame",
-    frameUrl: "https://taylor-progestational-heartenedly.ngrok-free.dev"
+    frameUrl: frameUrl: "https://base-frame-neon.vercel.app"
   });
 });
