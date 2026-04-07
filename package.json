@@ -1,14 +1,4 @@
 {
   "name": "base-frame",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "ethers": "^6.16.0",
-    "express": "^5.2.1"
-  }
+  "version": "1.0.0"
 }
