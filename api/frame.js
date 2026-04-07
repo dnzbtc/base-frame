@@ -1,7 +1,9 @@
 export default function handler(req, res) {
 
+  res.setHeader("Content-Type", "text/html");
+  res.setHeader("Cache-Control", "no-store");
+
   if (req.method === "POST") {
-    res.setHeader("Content-Type", "text/html");
     return res.send(`
       <html>
         <head>
@@ -12,7 +14,6 @@ export default function handler(req, res) {
     `);
   }
 
-  res.setHeader("Content-Type", "text/html");
   return res.send(`
     <html>
       <head>
