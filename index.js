@@ -61,10 +61,10 @@ app.post("/action", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server running"));
 app.post("/action", async (req, res) => {
   res.json({
     type: "frame",
     frameUrl: frameUrl: "https://base-frame-neon.vercel.app"
   });
 });
+module.exports = app;
