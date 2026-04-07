@@ -1,6 +1,8 @@
-export default function handler(req, res) {
+module.exports = (req, res) => {
   if (req.method === "GET") {
-    res.status(200).send(`
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    res.end(`
       <html>
         <head>
           <meta property="fc:frame" content="vNext" />
@@ -13,7 +15,9 @@ export default function handler(req, res) {
   }
 
   if (req.method === "POST") {
-    res.status(200).send(`
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    res.end(`
       <html>
         <head>
           <meta property="fc:frame" content="vNext" />
@@ -22,4 +26,4 @@ export default function handler(req, res) {
       </html>
     `);
   }
-}
+};
